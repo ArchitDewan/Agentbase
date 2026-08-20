@@ -7,7 +7,7 @@ services:
         POSTGRES_PASSWORD: agentbase
         POSTGRES_DB: agentbase
       ports:
-        - "5432:5432"
+        - "127.0.0.1:55433:5432"
       volumes:
         - agentbase_postgres_data:/var/lib/postgresql/data
       healthcheck:
@@ -17,4 +17,4 @@ services:
         retries: 5
 
 volumes:
-    agentbase_postgres_data:
+  agentbase_postgres_data:
