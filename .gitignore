@@ -1,2 +1,28 @@
 .DS_Store
 
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/
+apps/web/dist/
+npm-debug.log*
+
+# Env/secrets
+.env
+.env.*
+!.env.example
+
+# AWS/Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
